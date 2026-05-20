@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanuo.xe | Trading Analysis & Insights</title>
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --surface-color: #151a22;
+            --accent-color: #00e5ff;
+            --text-main: #ffffff;
+            --text-muted: #8a99ad;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222b3a;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero span {
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 229, 255, 0.4);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            padding: 25px;
+            border: 1px solid #222b3a;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .card .tag {
+            color: var(--accent-color);
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 14px;
+            border-top: 1px solid #222b3a;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TANUO.XE</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Analysis</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Trade with <span>Institutional Logic</span></h1>
+        <p>Market structure shift, order blocks, aur advanced price action analysis ko aasan bhasha mein seekhein.</p>
+        <a href="#" class="btn">Latest Analysis Dekhein</a>
+    </section>
+
+    <main class="main-content">
+        <h2 class="section-title">Recent Market Insights</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Market Analysis</span>
+                <h3>XAUUSD Higher Timeframe Outlook</h3>
+                <p>Weekly liquidity sweep ke baad market structure shift ka wait. Agla potential target aur key order blocks ka breakdown...</p>
+                <a href="#" style="color: var(--accent-color); text-decoration: none; font-size: 14px; font-weight: bold;">Read More →</a>
+            </div>
+            <div class="card">
+                <span class="tag">Education</span>
+                <h3>Order Block Mark Karne Ka Sahi Tarika</h3>
+                <p>Kya aap har random candle ko order block maante hain? Is article mein seekhein 50% equilibrium marking aur valid confluence zones.</p>
+                <a href="#" style="color: var(--accent-color); text-decoration: none; font-size: 14px; font-weight: bold;">Read More →</a>
+            </div>
+            <div class="card">
+                <span class="tag">Psychology</span>
+                <h3>Risk Management in Prop Challenges</h3>
+                <p>Trading challenges ke dauran drawdown se kaise bachein aur daily limits ko institutional discipline ke saath kaise manage karein.</p>
+                <a href="#" style="color: var(--accent-color); text-decoration: none; font-size: 14px; font-weight: bold;">Read More →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Tanuoex. All Rights Reserved. Designed for Professional Traders.
+    </footer>
+
+</body>
+</html>
